@@ -1,0 +1,343 @@
+*{
+ margin:0;
+ padding:0;
+}
+
+html, body{
+ margin:0;
+ padding:0;
+}
+
+body{
+ background:fff; 
+}
+
+#container{
+ min-height:100%;
+}
+
+#element{
+ padding-bottom:100px;
+ width:100%;
+}
+
+#footer{
+ width:100%;
+ height:100px;
+ background-color:#222;
+ left:0;
+ bottom:0;
+}
+
+#header{
+ width:100%;
+ height:50px;
+ margin-top:20px;
+}
+
+#header h2{
+ float:left;
+ margin-left:10px;
+ color:#444;
+ font-family:monospace;
+ font-size:35px;
+ border-right:1px solid #444;
+}
+
+#header h2 i{
+ font-size:24px;
+ font-family:cursive;
+ margin-right:13px;
+}
+
+#header h4{
+ float:right;
+ border:1px solid #444;
+ line-height:30px;
+ padding:0 5px;
+ margin-right:10px;
+}
+
+#header h4 a{
+ text-decoration:none;
+ color:#444;
+}
+
+#header h4 a:hover{
+ background:#fff;
+ color:black;
+}
+
+.menu{ 
+ background:#444;
+ width:100%;
+ height:5px;
+}
+
+.menu-btn{
+ width:100%;
+}
+
+.menu-btn img{
+ width:40px;
+ height:40px;
+ float:left;
+}
+
+#men{
+ height:1px;
+}
+
+.aside{
+ background:#222;
+ width:100%;
+ height: 0;
+ overflow:hidden;
+ transition:0.5s;
+}
+
+.aside ul{ 
+ padding:10px;
+ list-style:none;
+}
+
+.aside ul #x{
+ color:#fff;
+ font-size:25px;;
+ font-weight:bolder;
+ float:right;
+}
+
+.aside ul li{
+ padding:25px;
+ border-bottom:1px solid #c0c0c0;
+}
+
+.aside ul li a{
+ text-decoration:none;
+ color:#fff;
+ font-family:monospace;
+ font-size:10px;
+}
+
+.aside ul li a:hover{
+ opacity:0.5;
+}
+#para{
+ font-size:30px;
+ text-align:center;
+ font-family:fantasy;
+ font-weight:bold;
+ margin-top:40px;
+ box-sizing:border-box;
+}
+
+#para button{
+ font-size:10px;
+ background:#fff;
+ color:#333;
+ padding:10px;
+ outline-color:#333;
+ border:2px solid #333;
+ margin:10px;
+}
+
+#para button a{
+ text-decoration:none;
+ color:#222;
+}
+#main{
+ color:#fff; 
+ position:relative;
+ text-shadow:8px 7px 16px #111;
+ font-family:Courier new,monospace;
+ font-weight:bolder;
+ text-transform:uppercase;
+}
+
+#main p{
+ position:absolute;
+ bottom:130px;
+ text-align:center;
+ font-size:40px;
+}
+
+#pic{
+ width:100%;
+ height:60vh;
+ margin-top:1px;
+}
+
+#list{ 
+ margin-left:35px;
+ list-style:square;
+}
+
+#list li{
+ padding:5px;
+}
+
+#listed {
+ font-size:10px;
+ margin:10px;
+ font-family:monospace;
+}
+
+#listed h3{ 
+ margin-left:10px;
+ font-size:15px;
+ font-family:monospace;
+}
+
+.gal{
+ width:80%;
+ display:block;
+ margin-left:auto;
+ margin-right:auto;
+ opacity:1;
+}
+
+#fom{
+ margin:25px;
+}
+
+form{
+ width:100%;
+ display:block;
+ margin-left:20px;
+ margin-top:10px;
+}
+
+#mail{
+ padding:10px 35px;
+ margin:5px;
+ outline:none;
+ border:1px solid #333;
+ font-family:monospace;
+}
+
+#text{
+ padding:10px 35px;
+ margin:5px;
+ outline:none;
+ border:1px solid #333;
+ font-family:monospace;
+}
+
+#sub{
+ margin:5px;
+ padding:10px;
+ background:#fff;
+ border:1px solid #333;
+ color:#333;
+ outline:none;
+ font-family:monospace;
+}
+
+#new{
+ font-family:monospace;
+ font-size:10px;
+ font-weight:bold;
+ text-transform:uppercase;
+}
+
+#gallery {
+ 
+}
+
+#gallery .people {
+ text-align:center;
+ max-width:85%;
+ width:100%;
+ margin:auto;
+ margin-top:10px;
+ margin-bottom:35px;
+ }
+ 
+#gallery .people .text-div  {
+ border:1px solid #333;
+ padding:30px 0;
+ background:#ebebeb;
+ font-size: 15px;
+}
+#gallery .people .text-div h2 {
+  font-size: 15px;
+}
+
+
+#gallery .people #pic-div {
+ border:1px solid #333;
+ border-top-left-radius:10px;
+ border-top-right-radius:10px;
+ background-color:#222;
+}
+
+#gallery .people .emages {
+ width:25%;
+ border-radius:50px;
+ height:auto;
+}
+
+#gallery .people .emages:hover {
+ width:70%;
+ transition:.4s;
+}
+
+#students {
+ margin:auto;
+ border:1px solid #222;
+ background:#222;
+ color:#fff;
+ max-width:100%;
+ width:100%;
+ padding:20px
+ text-align:center;
+ display:flex;
+ justify-content:center;
+ margin-top:4px;
+ font-size: 25px;
+}
+
+@media only screen and (min-width: 480px) and (orientation: landscape){
+     #main p{
+      bottom:95px;
+     }
+     
+#pic{
+ max-width: 70%;
+ width:100%;
+ height:90vh;
+ display:flex;
+ justify-content: center;
+ }
+ 
+
+#main{
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+ }
+ 
+#students {
+  margin-top: 10px;
+}
+
+#gallery {
+  display: grid;
+  grid-template: repeat(2, 2fr) / repeat(2, 2fr) ;
+ }
+
+}
+
+@media only screen and (min-width: 767px) {
+#pic{
+ height:400px;
+ }
+ 
+#gallery {
+  display: grid;
+  grid-template: repeat(2, 2fr) / repeat(3, 1fr) ;
+  justify-content:space-around;
+ }
+
+}
